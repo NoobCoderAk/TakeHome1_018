@@ -8,18 +8,37 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>Hilih Hiling</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
+    <style>
+        body{
+            background-image: url('https://swall.teahub.io/photos/small/129-1296754_manchester-united-white-wallpaper-computer.jpg');
+        }
+    </style>
     <body>
-        <h1 align="center">INFO HILING LUR !!</h1>
-        <hr>
-        <form action="/input"  method="post" enctype=”multipart/form-data” align="center" >
-            nama : <input type="text" name="var_nama">
-            <br/><br/><br/>
-            lokasi : <input type="text" name="var_lokasi">
-            <br/><br/><br/>
-            gambar : <input type="file" name="var_img" accept="image/*"/>
-            <br/><br/><br/>
-            <button type="submit"> Submit</button>
-        </form>
+        <div class="card col-5 position-absolute top-50 start-50 translate-middle">
+            <div class="card-body">
+                <h2>INFO HILING LURRR</h2>
+                <form action="/input" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nama</label>
+                        <input type="text" name="nama" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Lokasi</label>
+                        <input type="text" name="lokasi" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Foto</label>
+                        <input class="form-control" type="file" name="image" accept="image/*, file/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-danger" value="send">Send</button>
+                </form>
+            </div>
+        </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </html>

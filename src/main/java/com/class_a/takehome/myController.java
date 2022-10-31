@@ -25,7 +25,7 @@ public class myController {
     public String getInput(
             @RequestParam(value = "nama") String var_nama,
             @RequestParam(value = "lokasi") String var_lokasi,
-            @RequestParam(value = "gambar") MultipartFile var_image,Model hiling
+            @RequestParam(value = "image") MultipartFile var_image,Model hiling
         )throws IOException{
         byte[] img = var_image.getBytes();
         String base64Image = Base64.encodeBase64String(img);
