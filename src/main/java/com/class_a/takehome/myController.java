@@ -27,6 +27,6 @@ public class myController {
         hiling.addAttribute("lokasi",lokasi);
         hiling.addAttribute("img",img);
         
-        return "rslt";
+        return "viewpage";
     }
 }
