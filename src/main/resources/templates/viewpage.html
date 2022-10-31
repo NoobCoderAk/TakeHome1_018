@@ -10,12 +10,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>View Info Hiling</div>
+        <h1 align="center">INFO HILING LUR !!</h1>
         <hr>
-    <l th:text="${nama}"></l>
-    <br><br><br>
-    <l th:text="${lokasi}"></l>
-    <br><br><br>
-    <l><img th:src="@{${img}}" width="120"/></l>
+        <table border="1" align="center">
+            <tr>
+                <td>Nama: </td>
+                <td  th:text="${nama}">></td>
+            </tr>
+            
+            <tr>
+                <td>Lokasi </td>
+                <td th:text="${lokasi}"></td>
+            </tr>
+            
+            <tr>
+                <td>Gambar </td>
+                <td><img th:src="@{${img}}" width="120"/</td>
+            </tr>           
+        </table>
     </body>
 </html>
